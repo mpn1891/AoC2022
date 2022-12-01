@@ -14,8 +14,7 @@ def main():
     for i in array:
         if i != '':
             total = total + int(i)
-            #print(total)
-        
+            #print(total)  
         else:       
             total_arr.append(total)
             total = 0
