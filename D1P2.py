@@ -17,8 +17,6 @@ def main():
             #print(total)
         
         else:       
-            if total > answer1:
-                answer1 = total
             total_arr.append(total)
             total = 0
     #totals numbers of elves so I can use this after the sort
@@ -26,10 +24,11 @@ def main():
     #definitely a faster way than sort but its fine
     total_arr.sort()
     #after the sort last 3 are the highest
+    answer1 = total_arr[elfCount-1]
     answer2 = total_arr[elfCount-1] +total_arr[elfCount-2]+total_arr[elfCount-3]
         
     print (answer1)
     print (answer2)
 
 if __name__ == "__main__":
-    main()
+    main() 
