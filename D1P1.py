@@ -1,17 +1,26 @@
 
-array = []
-answer = 0
-with open(r"C:\Users\mpn42\source\repos\AdventOfCode2021\AdventOfCode2021\Input Files\D1.txt","r") as f:
-    for val in f.read().split():
-        array.append(int(val))  
+
+def main():
+    array = []
+    total = 0
+    answer = 0
+    with open(r"C:\Users\mpn42\source\repos\AoC2022\AoC2022\AoC2022\Input Files\D1.txt","r") as f:
+        for val in f.read().splitlines():
+            array.append((val))  
         
-print(array)
+    print(array)
 
-for i in range(len(array)-1):
-    if array[i+1] > array[i]:
-        answer =+ answer + 1
-        continue
-    else:
-        continue
+    for i in array:
+        if i != '':
+            total = total + int(i)
+            #print(total)
+        
+        else:       
+            if total > answer:
+                answer = total
+            total = 0
 
-print (answer)
+    print (answer)
+
+if __name__ == "__main__":
+    main()
