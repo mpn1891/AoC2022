@@ -1,7 +1,8 @@
 
+
 def main():
     array = []
-
+    #build points look up dict
     pointsDict = {'a': 1,'b': 2,'c': 3,'d': 4,'e': 5,'f': 6,'g': 7,'h': 8,'i': 9,'j': 10,'k': 11,'l': 12,
     'm': 13,'n': 14,'o': 15,'p': 16,'q': 17,'r': 18,'s': 19,'t': 20,'u': 21,'v': 22,'w': 23,'x': 24,'y': 25,
     'z': 26,'A': 27,'B': 28,'C': 29,'D': 30,'E': 31,'F': 32,'G': 33,'H': 34,'I': 35,'J': 36,'K': 37,'L': 38,
@@ -13,7 +14,10 @@ def main():
             array.append((val))  
 
     middle = 0
+    left = ''
+    right = ''
     sum = 0
+    #split the word in the middle into two strings, do a search on the first in the second
     for word in array:
         middle = int(len(word)/2)
         left = word[:-middle]
@@ -22,11 +26,9 @@ def main():
         for char in left:
             if char in right:
                 sum += pointsDict[char]
-                #print('found',char)
                 break
-        left=''
-        right=''
     print(sum)
 
 if __name__ == "__main__":
     main() 
+
