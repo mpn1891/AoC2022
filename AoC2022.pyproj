@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>46808187-9e45-4b1b-bfc8-0b96e89001cc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>D2P2.py</StartupFile>
+    <StartupFile>D3P2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,6 +29,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="D2P2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="D3P1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="D3P2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module1.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
