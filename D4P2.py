@@ -15,7 +15,7 @@ def main():
 
     #reads the base array into each elf's list
     for i in range(0,len(array),1):
-        elfOne[i]=(array[i][:-2])
+        elfOne[i]=array[i][:-2]
         elfTwo[i]=array[i][2:]
 
     #need to fix the having to convert int at time of compare, later can use list comprehension 
