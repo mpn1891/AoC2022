@@ -20,7 +20,7 @@ def main():
             valClean = re.split(r'move | from | to ',val)
             array.append((valClean))  
 
-    #im dumb and made them backwards too lazy to redo
+    #im dumb and made them backwards too lazy to redo, just reverses each string in the original stacks array
     orgStacks = [i[::-1] for i in stacks]
     #creates copy for P2, doing both P1 and P2 here
     orgStacksP2 = orgStacks.copy()
