@@ -43,7 +43,7 @@ def main():
         #gets string
         stringToMove = orgStacks[sourceStack][start:end]
 
-        #Skips the Reverse for P2
+        #reverses for P1 due to crane design
         stringToMove = stringToMove[::-1]
 
         #adds to target
