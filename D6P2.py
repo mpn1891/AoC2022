@@ -23,7 +23,7 @@ def main():
                 if wrkString.count(j) > 1:
                     repeatFound = 1   
                     break
-            #if no repeats are found this is the answer
+            #if no repeats are found this is the answer, adding one to i as i in index so character number is + 1
             if repeatFound == 0:
                 print('Found first unique',i+1)
 
